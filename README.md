@@ -10,3 +10,5 @@ Total Medal Weighting = SUMX(Fact_Results,Fact_Results[Medal Score])
 Ranking = RANKX(ALL(Countries[Country]),[Total Medal Weighting],,DESC)
 Prev. Ranking = CALCULATE([Ranking],PARALLELPERIOD(Dates[Date], -4, YEAR))
 ```
+#### Model
+![Model](https://github.com/Helena-ys/Olympic-Statistics/blob/main/Model.PNG?raw=true)
